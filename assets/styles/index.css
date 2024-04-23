@@ -1,18 +1,15 @@
 :root {
-  font: 62.5% "Roboto", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   --font-bold: 500;
   --font-small: 1.2rem;
   --font-normal: 1.6rem;
   --font-big: 2rem;
+  --background-color: #e5e5e5;
   --primary-color: #262626;
   --secondary-color: #8e8e8e;
   --placeholder-color: #979797;
+  --white-color: #fff;
   --blue-color: #139ef2;
   --gray-color: #dbdbdb;
-  --icon-size: 2.4rem;
   --profile-big: 5.6rem;
   --profile-normal: 3.2rem;
   --bar-height: 5.6rem;
@@ -21,6 +18,10 @@
 *,
 *:before,
 *:after {
+  font: 62.5% "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,15 +36,104 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+ion-icon {
+  font-size: 2.4rem;
   color: var(--primary-color);
 }
 
-h3 {
-  font-size: 4.8rem;
+header,
+footer > nav {
+  width: 100vw;
+  height: var(--bar-height);
+  padding-inline: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  border: 1px solid var(--gray-color);
+  background-color: var(--white-color);
 }
 
-p {
-  font-size: 3.2rem;
+header {
+  top: 0;
+  left: 0;
+}
+
+#logo {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+#logo ion-icon {
+  margin-block: 0.8rem;
+}
+
+#logo img {
+  padding-inline: 1.6rem;
+  border-left: 1px solid var(--gray-color);
+}
+
+#logo-mobile {
+  display: none;
+}
+
+#search-bar {
+  width: 21.6rem;
+  height: 3.2rem;
+
+  font-size: var(--font-normal);
+  padding-inline: 1.2rem;
+
+  background-color: var(--background-color);
+  border: 1px solid var(--gray-color);
+  border-radius: 0.4rem;
+}
+
+#search-bar::placeholder {
+  font-size: var(--font-small);
+  color: var(--placeholder-color);
+  text-align: center;
+}
+
+#search-bar:focus {
+  outline-color: #8e8e8e;
+}
+
+header > nav,
+.menu-desktop {
+  display: flex;
+  gap: 1.6rem;
+}
+
+footer > nav {
+  display: none;
+}
+
+@media only screen and (max-width: 614px) {
+  .menu-desktop,
+  #logo img,
+  #search-bar {
+    display: none;
+  }
+
+  #logo-mobile {
+    display: flex;
+  }
+
+  footer > nav {
+    max-width: 66.4rem;
+
+    display: flex;
+
+    bottom: 0;
+    left: 0;
+  }
 }
