@@ -1,0 +1,49 @@
+:root {
+  font: 62.5% "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --font-bold: 500;
+  --font-small: 1.2rem;
+  --font-normal: 1.6rem;
+  --font-big: 2rem;
+  --primary-color: #262626;
+  --secondary-color: #8e8e8e;
+  --placeholder-color: #979797;
+  --blue-color: #139ef2;
+  --gray-color: #dbdbdb;
+  --icon-size: 2.4rem;
+  --profile-big: 5.6rem;
+  --profile-normal: 3.2rem;
+  --bar-height: 5.6rem;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 984px;
+  height: 100dvh;
+  margin: 0 auto;
+  padding-inline: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 4.8rem;
+}
+
+p {
+  font-size: 3.2rem;
+}
