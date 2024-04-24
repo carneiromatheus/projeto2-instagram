@@ -41,6 +41,13 @@ body {
   background-color: var(--background-color);
 }
 
+ion-icon:hover,
+input:hover,
+#logo:hover,
+.story:hover {
+  cursor: pointer;
+}
+
 ion-icon {
   font-size: 2.4rem;
   color: var(--primary-color);
@@ -121,7 +128,7 @@ main {
 
 #stories-bar {
   position: relative;
-  
+
   display: flex;
   align-items: center;
 }
@@ -184,6 +191,10 @@ main {
   font-size: var(--font-small);
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.story:hover {
+  text-decoration: underline;
 }
 
 footer > nav {
