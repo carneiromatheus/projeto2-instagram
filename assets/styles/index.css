@@ -61,7 +61,6 @@ footer > nav {
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   position: fixed;
   border: 1px solid var(--gray-color);
@@ -71,6 +70,18 @@ footer > nav {
 header {
   top: 0;
   left: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 93.6rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
@@ -114,7 +125,7 @@ header {
   outline-color: #8e8e8e;
 }
 
-header > nav,
+.menu-header,
 .menu-desktop {
   display: flex;
   gap: 1.6rem;
@@ -231,6 +242,7 @@ footer > nav {
     max-width: 66.4rem;
 
     display: flex;
+    justify-content: space-between;
 
     bottom: 0;
     left: 0;
