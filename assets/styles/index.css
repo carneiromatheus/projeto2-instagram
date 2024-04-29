@@ -1,5 +1,6 @@
 :root {
   --font-bold: 500;
+  --font-thin: 300;
   --font-small: 1.2rem;
   --font-normal: 1.6rem;
   --font-big: 2rem;
@@ -29,13 +30,11 @@
 
 body {
   max-width: 98.4rem;
-  height: 100dvh;
   margin: 0 auto;
-  padding-inline: 2.4rem;
+  padding-inline: 1.2rem;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 
   color: var(--primary-color);
   background-color: var(--background-color);
@@ -79,7 +78,7 @@ ion-icon {
 #header-page-container {
   width: 100%;
   max-width: 93.6rem;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -135,7 +134,7 @@ ion-icon {
 main {
   width: 100%;
   max-width: 61.6rem;
-  margin: calc(var(--bar-height) + 3.6rem) auto 0;
+  margin-top: calc(var(--bar-height) + 3.6rem);
 }
 
 #stories-bar {
@@ -143,7 +142,7 @@ main {
 
   display: flex;
   align-items: center;
-  
+
   position: relative;
 }
 
@@ -191,7 +190,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,10 +226,10 @@ main {
 
 .post {
   width: 100%;
-  
+
   display: flex;
   flex-direction: column;
-  
+
   border: 1px solid var(--gray-color);
 }
 
@@ -287,12 +286,152 @@ main {
   display: none;
 }
 
+#sidebar {
+  display: none;
+}
+
+@media only screen and (min-width: 935px) {
+  body {
+    justify-content: space-between;
+  }
+
+  #sidebar {
+    height: fit-content;
+    margin-left: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: calc(var(--bar-height) + 3.6rem);
+  }
+
+  #menu-profile {
+    width: 100%;
+    padding-block: 1.6rem;
+    padding-left: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  #profile-picture:hover,
+  #username:hover,
+  #name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  #username {
+    font-size: var(--font-normal);
+    font-weight: var(--font-bold);
+  }
+
+  #name {
+    font-size: var(--font-normal);
+    font-weight: var(--font-thin);
+  }
+
+  #for-you header {
+    width: 100%;
+    margin-bottom: 1.6rem;
+    padding-inline: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #for-you-title,
+  #see-all {
+    font-size: var(--font-normal);
+  }
+
+  #see-all {
+    font-weight: var(--font-bold);
+  }
+
+  #for-you-profiles {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .profile {
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .for-you-username,
+  .for-you-btn {
+    font-size: var(--font-normal);
+  }
+
+  .for-you-username {
+    font-weight: var(--font-bold);
+  }
+
+  .for-you-describe {
+    font-size: var(--font-small);
+    color: var(--secondary-color);
+  }
+
+  .for-you-btn {
+    font-weight: var(--font-bold);
+    color: var(--blue-color);
+  }
+
+  .profile-info img:hover,
+  .for-you-username:hover,
+  .for-you-btn:hover,
+  #see-all:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  #sidebar footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  #links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  #links a:hover {
+    text-decoration: underline;
+  }
+
+  #links a,
+  #copy {
+    font-size: var(--font-small);
+    font-weight: var(--font-thin);
+    color: var(--placeholder-color);
+    text-decoration: none;
+  }
+}
 
 @media only screen and (max-width: 614px) {
   #logo-desktop img,
   #search-bar,
   #menu-desktop,
-  #arrow-stories {
+  #arrow-stories,
+  #sidebar {
     display: none;
   }
 

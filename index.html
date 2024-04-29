@@ -23,32 +23,32 @@
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
-    <header id="header-page">
-      <div id="header-page-container">
-        <div id="logo-desktop">
-          <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
-          <img src="./assets/images/logo/logo.png" alt="Logo Instagram" />
-        </div>
-        <input type="text" id="search-bar" placeholder="Pesquisar" />
-        <img
-          id="logo-mobile"
-          src="./assets/images/logo/logo.png"
-          alt="Logo Instagram"
-        />
-        <nav id="menu-header">
-          <ion-icon
-            name="paper-plane-outline"
-            aria-label="Compartilhar"
-          ></ion-icon>
-          <div id="menu-desktop">
-            <ion-icon name="compass-outline" aria-label="Navegar"></ion-icon>
-            <ion-icon name="heart-outline" aria-label="Curtidas"></ion-icon>
-            <ion-icon name="person-outline" aria-label="Perfil"></ion-icon>
-          </div>
-        </nav>
-      </div>
-    </header>
     <main>
+      <header id="header-page">
+        <div id="header-page-container">
+          <div id="logo-desktop">
+            <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+            <img src="./assets/images/logo/logo.png" alt="Logo Instagram" />
+          </div>
+          <input type="text" id="search-bar" placeholder="Pesquisar" />
+          <img
+            id="logo-mobile"
+            src="./assets/images/logo/logo.png"
+            alt="Logo Instagram"
+          />
+          <nav id="menu-header">
+            <ion-icon
+              name="paper-plane-outline"
+              aria-label="Compartilhar"
+            ></ion-icon>
+            <div id="menu-desktop">
+              <ion-icon name="compass-outline" aria-label="Navegar"></ion-icon>
+              <ion-icon name="heart-outline" aria-label="Curtidas"></ion-icon>
+              <ion-icon name="person-outline" aria-label="Perfil"></ion-icon>
+            </div>
+          </nav>
+        </div>
+      </header>
       <div id="stories-bar">
         <section id="stories">
           <div class="story">
@@ -226,16 +226,131 @@
           </footer>
         </article>
       </section>
+      <footer>
+        <nav id="menu-footer">
+          <ion-icon name="home" aria-label="Home"></ion-icon>
+          <ion-icon name="search" aria-label="Buscar"></ion-icon>
+          <ion-icon name="add-circle-outline" aria-label="Publicar"></ion-icon>
+          <ion-icon name="heart-outline" aria-label="Curtidas"></ion-icon>
+          <ion-icon name="person-outline" aria-label="Perfil"></ion-icon>
+        </nav>
+      </footer>
     </main>
-    <footer>
-      <nav id="menu-footer">
-        <ion-icon name="home" aria-label="Home"></ion-icon>
-        <ion-icon name="search" aria-label="Buscar"></ion-icon>
-        <ion-icon name="add-circle-outline" aria-label="Publicar"></ion-icon>
-        <ion-icon name="heart-outline" aria-label="Curtidas"></ion-icon>
-        <ion-icon name="person-outline" aria-label="Perfil"></ion-icon>
-      </nav>
-    </footer>
+    <aside id="sidebar">
+      <section id="menu-profile">
+        <img
+          id="profile-picture"
+          src="/assets/images/profile/catanacomics.svg"
+          alt="Imagem de perfil"
+          width="56"
+          height="56"
+        />
+        <div>
+          <h1 id="username">catanacomics</h1>
+          <p id="name">Catana</p>
+        </div>
+      </section>
+      <section id="for-you">
+        <header>
+          <div id="for-you-title">Sugestões para você</div>
+          <div id="see-all">Ver tudo</div>
+        </header>
+      </section>
+      <section id="for-you-profiles">
+        <div class="profile">
+          <div class="profile-info">
+            <img
+              id="for-you-profile-picture"
+              src="/assets/images/profile/bad.vibes.memes.svg"
+              alt="Imagem de perfil"
+              width="32"
+              height="32"
+            />
+            <div>
+              <h2 class="for-you-username">bad.vibes.memes</h2>
+              <p class="for-you-describe">Segue você</p>
+            </div>
+          </div>
+          <div class="for-you-btn">Seguir</div>
+        </div>
+        <div class="profile">
+          <div class="profile-info">
+            <img
+              id="for-you-profile-picture"
+              src="/assets/images/profile/chibirdart.svg"
+              alt="Imagem de perfil"
+              width="32"
+              height="32"
+            />
+            <div>
+              <h2 class="for-you-username">chibirdart</h2>
+              <p class="for-you-describe">Segue você</p>
+            </div>
+          </div>
+          <div class="for-you-btn">Seguir</div>
+        </div>
+        <div class="profile">
+          <div class="profile-info">
+            <img
+              id="for-you-profile-picture"
+              src="/assets/images/profile/razoesparaacreditar.svg"
+              alt="Imagem de perfil"
+              width="32"
+              height="32"
+            />
+            <div>
+              <h2 class="for-you-username">razoesparaacreditar</h2>
+              <p class="for-you-describe">Novo no Instagram</p>
+            </div>
+          </div>
+          <div class="for-you-btn">Seguir</div>
+        </div>
+        <div class="profile">
+          <div class="profile-info">
+            <img
+              id="for-you-profile-picture"
+              src="/assets/images/profile/adorable_animals.svg"
+              alt="Imagem de perfil"
+              width="32"
+              height="32"
+            />
+            <div>
+              <h2 class="for-you-username">adorable_animals</h2>
+              <p class="for-you-describe">Segue você</p>
+            </div>
+          </div>
+          <div class="for-you-btn">Seguir</div>
+        </div>
+        <div class="profile">
+          <div class="profile-info">
+            <img
+              id="for-you-profile-picture"
+              src="/assets/images/profile/smallcutecats.svg"
+              alt="Imagem de perfil"
+              width="32"
+              height="32"
+            />
+            <div>
+              <h2 class="for-you-username">smallcutecats</h2>
+              <p class="for-you-describe">Segue você</p>
+            </div>
+          </div>
+          <div class="for-you-btn">Seguir</div>
+        </div>
+      </section>
+      <footer>
+        <div id="links">
+          <a href="#">Sobre</a> • <a href="#">Ajuda</a> •
+          <a href="#">Imprensa</a> • <a href="#">API</a> •
+          <a href="#">Carreiras</a> •
+          <a href="#">Privacidade</a>
+          <a href="#">Termos</a> • <a href="#">Localização</a> •
+          <a href="#">Contas mais relevantes</a> • <a href="#">Hashtags</a> •
+          <a href="#">Idiomas</a>
+        </div>
+        <div id="copy">© 2021 INSTAGRAM DO FACEBOOK</div>
+      </footer>
+    </aside>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
