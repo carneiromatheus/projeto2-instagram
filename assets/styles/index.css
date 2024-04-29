@@ -43,7 +43,7 @@ body {
 
 ion-icon:hover,
 input:hover,
-#logo:hover,
+#logo-desktop:hover,
 .story:hover {
   cursor: pointer;
 }
@@ -54,7 +54,7 @@ ion-icon {
 }
 
 header,
-footer > nav {
+#menu-footer {
   width: 100dvw;
   height: var(--bar-height);
   padding-inline: 2.4rem;
@@ -75,7 +75,7 @@ header {
   justify-content: center;
 }
 
-.header-container {
+#header-page {
   width: 100%;
   max-width: 93.6rem;
   
@@ -84,17 +84,17 @@ header {
   justify-content: space-between;
 }
 
-#logo {
+#logo-desktop {
   display: flex;
   gap: 1.6rem;
   align-items: center;
 }
 
-#logo ion-icon {
+#logo-desktop ion-icon {
   margin-block: 0.8rem;
 }
 
-#logo img {
+#logo-desktop img {
   padding-inline: 1.6rem;
   border-left: 1px solid var(--gray-color);
 }
@@ -125,8 +125,8 @@ header {
   outline-color: #8e8e8e;
 }
 
-.menu-header,
-.menu-desktop {
+#menu-header,
+#menu-desktop {
   display: flex;
   gap: 1.6rem;
 }
@@ -162,7 +162,7 @@ main {
   display: none;
 }
 
-#arrow {
+#arrow-stories {
   font-size: 4rem;
   color: var(--background-color);
 
@@ -215,15 +215,22 @@ main {
   text-decoration: underline;
 }
 
-footer > nav {
+#feed {
+  width: 100%;
+  height: 100dvh;
+  margin-block: 2.4rem;
+  background-color: #139ef2;
+}
+
+#menu-footer {
   display: none;
 }
 
 @media only screen and (max-width: 614px) {
-  .menu-desktop,
-  #logo img,
+  #logo-desktop img,
   #search-bar,
-  #arrow {
+  #menu-desktop,
+  #arrow-stories {
     display: none;
   }
 
@@ -245,7 +252,7 @@ footer > nav {
     border: none;
   }
 
-  footer > nav {
+  #menu-footer {
     max-width: 66.4rem;
 
     display: flex;
