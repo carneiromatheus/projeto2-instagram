@@ -70,6 +70,7 @@ ion-icon {
 #header-page {
   top: 0;
   left: 0;
+  z-index: 1;
 
   display: flex;
   justify-content: center;
@@ -139,7 +140,6 @@ main {
 
 #stories-bar {
   max-width: 61.4rem;
-  overflow-x: scroll;
 
   display: flex;
   align-items: center;
@@ -149,6 +149,7 @@ main {
 
 #stories {
   padding: 1.6rem;
+  overflow-x: scroll;
 
   background-color: var(--white-color);
   border: 1px solid var(--gray-color);
@@ -158,7 +159,7 @@ main {
   gap: 1.6rem;
 }
 
-#stories-bar::-webkit-scrollbar {
+#stories::-webkit-scrollbar {
   display: none;
 }
 
