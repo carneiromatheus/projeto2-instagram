@@ -105,24 +105,71 @@ ion-icon {
 
 #search-bar {
   width: 21.6rem;
-  height: 3.2rem;
-
-  font-size: var(--font-normal);
   padding-inline: 1.2rem;
 
-  background-color: var(--background-color);
   border: 1px solid var(--gray-color);
   border-radius: 0.4rem;
 }
 
+.comment-bar {
+  width: 75%;
+  margin: 0.8rem 0 1.2rem;
+  border: none;
+}
+
+#search-bar,
+.comment-bar {
+  height: 3.2rem;
+  font-size: var(--font-normal);
+
+  background-color: var(--background-color);
+}
+
 #search-bar::placeholder {
+  text-align: center;
+}
+
+#search-bar::placeholder,
+.comment-bar::placeholder {
   font-size: var(--font-small);
   color: var(--placeholder-color);
-  text-align: center;
 }
 
 #search-bar:focus {
   outline-color: #8e8e8e;
+}
+.comment-bar:focus {
+  outline: none;
+}
+
+.comment-qnt {
+  margin-top: 1.2rem;
+
+  font-size: var(--font-small);
+  font-weight: var(--font-thin);
+}
+
+.comment img,
+.comment-qnt:hover,
+.bold:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.comment-btn {
+  font-size: var(--font-small);
+  font-weight: var(--font-bold);
+  color: #b2dffc;
+
+  display: flex;
+  align-items: center;
+
+  transition: color 300ms;
+}
+
+.comment-btn:hover {
+  cursor: pointer;
+  color: #0095f6;
 }
 
 #menu-header,
@@ -271,9 +318,10 @@ main {
 
 .footer-post {
   width: 100%;
-  padding: 1.6rem;
+  padding: 1.6rem 1.6rem 0;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -284,6 +332,23 @@ main {
 
 #menu-footer {
   display: none;
+}
+
+.comment,
+.description-post {
+  width: 100%;
+  margin-top: 1.6rem;
+
+  font-size: var(--font-small);
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.bold {
+  font-size: var(--font-small);
+  font-weight: var(--font-bold);
 }
 
 #sidebar {
